@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500i,800");
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  background: -webkit-linear-gradient(300deg, #40405c 0%, #6f71aa 80%, #8a76ab 100%);
+  background: -o-linear-gradient(300deg, #40405c 0%, #6f71aa 80%, #8a76ab 100%);
+  background: linear-gradient(150deg, #40405c 0%, #6f71aa 80%, #8a76ab 100%); }
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 4em;
+  text-align: center;
+  color: white;
+  text-shadow: 0.5px 0.5px 20px #353B42; }
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  text-shadow: 0.5px 0.5px 20px #353B42; }
+
+p {
+  text-shadow: 0.5px 0.5px 20px #353B42; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  height: 90vh;
+  width: 80vw;
+  margin: auto;
+  padding: 20px; }
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 6; }
+
+.info {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 6; }
+
+ol.cars {
+  list-style-type: none;
+  margin: 0 0 0 75px; }
+
+ol.cars li {
+  counter-increment: myCounter;
+  margin: 0 0 45px 0;
+  padding: 13px 0 0 85px;
+  position: relative;
+  color: white;
+  font-size: 0.8em; }
+
+ol.cars li::before {
+  content: counter(myCounter, decimal-leading-zero);
+  display: inline-block;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.3em;
+  background-color: white;
+  color: #6f71aa;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  border-radius: 5px; }
+
+ol.cars li em {
+  display: block;
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 -5px 0;
+  text-shadow: 0.5px 0.5px 20px #353B42; }
+
+ol.cars li strong {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  color: white;
+  margin: .2em 0 .3em 0;
+  text-shadow: 0.5px 0.5px 20px #353B42; }
+
+.taartdiagram {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  top: 35vh;
+  left: 60vw;
+  height: 300px;
+  width: 300px;
+  position: absolute; }
+
+.gemeenschappelijk {
+  margin: auto;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  position: absolute; }
+
+.basisschijf {
+  background: #EEE; }
+
+.punt {
+  clip: rect(0px, 150px, 300px, 0); }
+
+/* DE SCHIJVEN VAN HET DIAGRAM */
+/* PUNT 1 */
+.punt_1_container {
+  -webkit-transform: rotate(73.1deg);
+  -ms-transform: rotate(73.1deg);
+  transform: rotate(73.1deg); }
+
+.punt_1 {
+  background-color: RGBA(15, 139, 141, 1);
+  -webkit-transform: rotate(83.1deg);
+  -ms-transform: rotate(83.1deg);
+  transform: rotate(83.1deg); }
+
+/* PUNT 2 */
+.punt_2_container {
+  -webkit-transform: rotate(159.4deg);
+  -ms-transform: rotate(159.4deg);
+  transform: rotate(159.4deg); }
+
+.punt_2 {
+  background-color: RGBA(236, 154, 41, 1);
+  -webkit-transform: rotate(93.6deg);
+  -ms-transform: rotate(93.6deg);
+  transform: rotate(93.6deg); }
+
+/* PUNT 3 */
+.punt_3_container {
+  -webkit-transform: rotate(227.7deg);
+  -ms-transform: rotate(227.7deg);
+  transform: rotate(227.7deg); }
+
+.punt_3 {
+  background-color: RGBA(168, 32, 26, 1);
+  -webkit-transform: rotate(111.6deg);
+  -ms-transform: rotate(111.6deg);
+  transform: rotate(111.6deg); }
+
+/* PUNT 4 */
+.punt_4_container {
+  -webkit-transform: rotate(285.7deg);
+  -ms-transform: rotate(285.7deg);
+  transform: rotate(285.7deg); }
+
+.punt_4 {
+  background-color: RGBA(104, 142, 38, 1);
+  -webkit-transform: rotate(122deg);
+  -ms-transform: rotate(122deg);
+  transform: rotate(122deg); }
+
+/* PUNT 5 */
+.punt_5_container {
+  -webkit-transform: rotate(336.2deg);
+  -ms-transform: rotate(336.2deg);
+  transform: rotate(336.2deg); }
+
+.punt_5 {
+  background-color: RGBA(84, 46, 113, 1);
+  -webkit-transform: rotate(129.4deg);
+  -ms-transform: rotate(129.4deg);
+  transform: rotate(129.4deg); }
+
+/* Tot slot de labels */
+p.label {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  position: absolute;
+  border-bottom: 2px solid white;
+  width: 165px;
+  padding: 3px; }
+
+.punt_1_label {
+  top: 20px;
+  left: 240px;
+  text-align: right;
+  padding: 0px 0px 0px 60px; }
+
+.punt_2_label {
+  top: 200px;
+  left: 275px;
+  text-align: right;
+  padding: 0px 0px 0px 60px; }
+
+.punt_3_label {
+  top: 260px;
+  left: -85px;
+  text-align: left;
+  padding: 0px 60px 0px 0px; }
+
+.punt_4_label {
+  top: 150px;
+  left: -160px;
+  text-align: left;
+  padding: 0px 60px 0px 0px; }
+
+.punt_5_label {
+  top: 40px;
+  left: -130px;
+  text-align: left;
+  padding: 0px 60px 0px 0px; }
+
+p.procent {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  position: absolute;
+  padding: 3px; }
+
+.punt_1_procent {
+  top: 65px;
+  left: 167px; }
+
+.punt_2_procent {
+  top: 180px;
+  left: 210px; }
+
+.punt_3_procent {
+  top: 220px;
+  left: 115px; }
+
+.punt_4_procent {
+  top: 155px;
+  left: 50px; }
+
+.punt_5_procent {
+  top: 80px;
+  left: 70px; }

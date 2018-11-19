@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500i,800');
+
+$main: white;
+$font: 'Raleway', sans-serif;
+$shadow: 0.5px 0.5px 20px #353B42;
+
+body {
+  font-family: $font;
+  font-weight: 400;
+  height: 100vh;
+  background: linear-gradient(150deg, #40405c 0%,#6f71aa 80%,#8a76ab 100%)
+}
+
+h1 {
+  font-family: $font;
+  font-weight: 900;
+  font-size: 4em;
+  text-align: center;
+  color: $main;
+  text-shadow: $shadow;
+}
+
+h2 {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 1.2em;
+  padding: 15px;
+  text-align: center;
+  color: $main;
+  text-shadow: $shadow;
+}
+
+p {
+  text-shadow: $shadow;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  height: 90vh;
+  width: 80vw;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.info {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+ol.cars {
+      list-style-type: none;
+      margin: 0 0 0 75px;
+}
+
+ol.cars li {
+      counter-increment: myCounter;
+      margin: 0 0 45px 0;
+      padding: 13px 0 0 85px;
+      position: relative;
+      color: $main;
+      font-size: 0.8em;
+
+}
+
+ol.cars li::before {
+      content: counter(myCounter,decimal-leading-zero);
+      display: inline-block;
+      text-align: center;
+      font-size: 3em;
+      line-height: 1.3em;
+      background-color: white;
+      color: #6f71aa;
+      font-family: $font;
+      font-weight: 800;
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      left: -40px;
+      border-radius: 5px;
+}
+
+ol.cars li em {
+      display: block;
+      font-style: italic;
+      font-family: $font;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: $main;
+      margin: 0 0 -5px 0;
+      text-shadow: $shadow;
+}
+
+ol.cars li strong {
+      display: block;
+      font-family: $font;
+      font-weight: 800;
+      font-size: 2em;
+      color: $main;
+      margin: .2em 0 .3em 0;
+      text-shadow: $shadow;
+
+}
+
+
+
+// TAARTDIAGRAM
+.taartdiagram {
+	grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  top: 35vh;
+  left: 60vw;
+	height: 300px;
+      width: 300px;
+  position: absolute;
+}
+
+// Gemeenschappelijke CSS regels voor elk onderdeel van het diagram
+.gemeenschappelijk {
+      margin: auto;
+      width:inherit;
+      height: inherit;
+      border-radius: 50%;
+      position: absolute;
+}
+
+// De binnenbasis
+.basisschijf {
+      background: #EEE;
+}
+
+// Gemeenschappelijke CSS regels voor elk punt van het diagram
+.punt {
+      clip: rect(0px, 150px, 300px, 0);
+}
+
+/* DE SCHIJVEN VAN HET DIAGRAM */
+
+/* PUNT 1 */
+.punt_1_container {
+	transform: rotate(73.1deg);
+}
+
+.punt_1 {
+      background-color: RGBA(15, 139, 141, 1.00);
+      transform: rotate(83.1deg);
+}
+
+/* PUNT 2 */
+.punt_2_container {
+	transform: rotate(159.4deg);
+}
+
+.punt_2 {
+	background-color: RGBA(236, 154, 41, 1.00);
+	transform: rotate(93.6deg);
+}
+
+/* PUNT 3 */
+.punt_3_container {
+	transform: rotate(227.7deg);
+}
+
+.punt_3 {
+	background-color: RGBA(168, 32, 26, 1.00);
+	transform: rotate(111.6deg);
+}
+
+/* PUNT 4 */
+.punt_4_container {
+	transform: rotate(285.7deg);
+}
+
+.punt_4 {
+	background-color: RGBA(104, 142, 38, 1.00);
+	transform: rotate(122deg);
+}
+
+/* PUNT 5 */
+.punt_5_container {
+	transform: rotate(336.2deg);
+}
+
+.punt_5 {
+	background-color: RGBA(84, 46, 113, 1.00);
+	transform: rotate(129.4deg);
+}
+
+/* Tot slot de labels */
+p.label {
+	color: $main;
+	font-family: $font;
+  font-weight: 300;
+  font-size: 0.8em;
+	position: absolute;
+	border-bottom: 2px solid $main;
+	width: 165px;
+  padding: 3px;
+}
+
+.punt_1_label {
+      top: 20px;
+      left: 240px;
+      text-align: right;
+      padding: 0px 0px 0px 60px;
+}
+
+.punt_2_label {
+      top: 200px;
+      left: 275px;
+      text-align: right;
+      padding: 0px 0px 0px 60px;
+}
+
+.punt_3_label {
+      top: 260px;
+      left: -85px;
+      text-align: left;
+      padding: 0px 60px 0px 0px;
+}
+
+.punt_4_label {
+      top: 150px;
+      left: -160px;
+      text-align: left;
+      padding: 0px 60px 0px 0px;
+}
+
+.punt_5_label {
+      top: 40px;
+      left: -130px;
+      text-align: left;
+      padding: 0px 60px 0px 0px;
+}
+
+p.procent {
+	color: $main;
+	font-family: $font;
+  font-weight: 300;
+  font-size: 0.9em;
+	position: absolute;
+  padding: 3px;
+}
+
+.punt_1_procent {
+  top: 65px;
+  left: 167px;
+}
+
+.punt_2_procent {
+  top: 180px;
+  left: 210px;
+}
+
+.punt_3_procent {
+  top: 220px;
+  left: 115px;
+}
+
+.punt_4_procent {
+  top: 155px;
+  left: 50px;
+}
+
+.punt_5_procent {
+  top: 80px;
+  left: 70px;
+}
